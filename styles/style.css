@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.header-info h1{
+     font-size: 64px;
+     color: #FFFFFF;
+ }
+ .header-info{
+     width: 50%;
+     margin-bottom: 20px;
+ }
+ .thumnail{
+     width: 50%;
+ }
+header{
+    background: #2D25A0;
+    padding:40px 0;
+ 
+}
+section{
+    padding:50px 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.thumnail img{
+    width: 100%;
+}
+.watch{
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+    padding:15px 25px;
+    background: crimson;
+    border-radius: 5px;
+}
+.container{
+    width: 1160px;
+    padding: 0 15px;
+    margin: auto;
+}
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+}
+.player{
+    padding: 10px;
+    border: 0.5px solid grey;
+}
+.profile-pic img{
+    width: 100%;
+}
+footer{
+    margin:auto;
+    text-align:center;
+}
+.logo{
+    width:100%
+}
+
+.logo img{
+    width:50%
+}
+.icon{
+    text-align: center;
+
+}
+.icon i{
+    padding:10px;
+    border-radius: 50%;
+    background-color: grey;
+    color: white;
+    margin: 0 20px;
+}
+.copyright-icon{
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* responsive */
+@media (max-width:992px){
+    .container{
+        width: 90%;
+        
+    }
+    .all-players{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .header-info h1{
+        font-size:50px;
+    }
+    .header-info{
+        width:100%;
+    }
+    .thumnail{
+        width: 100%;
+    }
+    .thumnail img{
+        width: 100%;
+    }
+    .header{
+        flex-direction: column;
+    }
+    
+}
+@media (max-width:766px) {
+    .container{
+        width: 90%;
+        
+    }
+    .header-info{
+        width:90%;
+    }
+    .thumnail{
+        width: 90%;
+    }
+    .header-info h1{
+        font-size: 45px;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .all-players{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .header{
+      
+        grid-template-columns: repeat(1,1fr);
+    }
+}
